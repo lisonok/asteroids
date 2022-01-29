@@ -74,7 +74,7 @@ function restart(messageText, newastnum) {
     asteroids = [];
     energy = [];
     message = messageText;
-    astnum = newastnum;
+    astnum = newastnum
     basicinit();
 }
 
@@ -82,7 +82,7 @@ function basicinit() {
     for (var i = 0; i < astnum; i++) {
         asteroids.push(new Asteroid());
     }
-    ship.healthLevel == 100;
+    ship.healthLevel = 100;
     ship.safe = true;
     setTimeout(function() {
         ship.safe = false;
